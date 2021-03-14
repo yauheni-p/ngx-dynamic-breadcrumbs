@@ -2,7 +2,7 @@ import { NgModule, Type } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { Route, RouterModule } from '@angular/router';
-import { BREADCRUMBS_DEFAULT_OPTIONS, BreadcrumbsDefaultOptions, BreadcrumbsModule } from '@breadcrumbs/breadcrumbs';
+import { BREADCRUMBS_DEFAULT_OPTIONS, BreadcrumbsDefaultOptions, BreadcrumbsModule } from 'ngx-dynamic-breadcrumbs';
 import { CarsComponent } from './components/cars/cars.component';
 import { PeopleComponent } from './components/people/people.component';
 import { CarComponent } from './components/car/car.component';
@@ -47,18 +47,18 @@ const routes: Route[] = [
   }
 ];
 
-// const BREADCRUMBS_OPTIONS: BreadcrumbsDefaultOptions = {
-//   dividerComponent: CustomDividerComponent
-// };
+const BREADCRUMBS_OPTIONS: BreadcrumbsDefaultOptions = {
+  dividerComponent: CustomDividerComponent
+};
 
 @NgModule({
   declarations: [AppComponent, CarsComponent, PeopleComponent, CarComponent, PersonComponent, CustomDividerComponent],
   imports: [BrowserModule, RouterModule.forRoot(routes), BreadcrumbsModule, CommonModule],
   providers: [PeopleService, CarsService, CarResolver, CarsResolver, PeopleResolver, PersonResolver,
-    // {
-    //   provide: BREADCRUMBS_DEFAULT_OPTIONS,
-    //   useValue: BREADCRUMBS_OPTIONS
-    // }
+    {
+      provide: BREADCRUMBS_DEFAULT_OPTIONS,
+      useValue: BREADCRUMBS_OPTIONS
+    }
   ],
   bootstrap: [AppComponent]
 })

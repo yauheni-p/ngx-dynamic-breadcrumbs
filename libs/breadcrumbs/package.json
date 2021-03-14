@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "ngx-dynamic-breadcrumbs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yauheni-p/ngx-dynamic-breadcrumbs.git"
+  },
+  "version": "1.0.3",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    }
+  }
+}

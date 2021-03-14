@@ -7,7 +7,7 @@ import {
 import { Observable, of } from 'rxjs';
 import { Car } from '../components/car/car';
 import { CarsService } from '../services/cars.service';
-import { BreadcrumbsService } from '@breadcrumbs/breadcrumbs';
+import { BreadcrumbsService } from 'ngx-dynamic-breadcrumbs';
 import { tap } from 'rxjs/operators';
 
 @Injectable()

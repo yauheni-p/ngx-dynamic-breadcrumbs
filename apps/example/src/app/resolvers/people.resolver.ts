@@ -6,7 +6,7 @@ import {
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { PersonListItem } from '../components/people/person-list-item';
-import { BreadcrumbsService } from '@breadcrumbs/breadcrumbs';
+import { BreadcrumbsService } from 'ngx-dynamic-breadcrumbs';
 import { tap } from 'rxjs/operators';
 import { PeopleService } from '../services/people.service';
 
