@@ -145,6 +145,31 @@
           }
         }
       }
+    },
+    "breadcrumbs": {
+      "projectType": "library",
+      "root": "libs/breadcrumbs",
+      "sourceRoot": "libs/breadcrumbs/src",
+      "prefix": "breadcrumbs",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/breadcrumbs/src/**/*.ts",
+              "libs/breadcrumbs/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/breadcrumbs"],
+          "options": {
+            "jestConfig": "libs/breadcrumbs/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

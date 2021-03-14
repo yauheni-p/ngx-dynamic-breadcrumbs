@@ -1,0 +1,14 @@
+<div class='breadcrumbs' *ngIf='menuItems$ | async as menuItems'>
+  <div class='breadcrumbs__item' *ngFor='let item of menuItems; last as isLast'>
+    <a
+      class='breadcrumbs__link'
+      [routerLinkActiveOptions]='{ exact: true }'
+      routerLinkActive='active bold'
+      [routerLink]='item.path'
+    >{{ item.breadcrumb }}</a>
+    <ng-container *ngIf='!isLast'>
+      <ng-container *ngComponentOutlet='dividerComponent'></ng-container>
+    </ng-container>
+
+  </div>
+</div>

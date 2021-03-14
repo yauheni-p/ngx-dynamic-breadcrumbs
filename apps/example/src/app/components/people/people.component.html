@@ -1,0 +1,5 @@
+<table>
+  <tr *ngFor='let person of people$ | async'>
+    <td class='list-item' [routerLink]='person.id.toString()'>{{person.firstName}} {{person.lastName}}</td>
+  </tr>
+</table>

@@ -1,6 +1,6 @@
 {
-  "name": "breadcrumbs",
-  "version": "0.0.0",
+  "name": "angular-breadcrumbs",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -68,6 +68,7 @@
     "eslint-plugin-cypress": "^2.10.3",
     "jest": "26.2.2",
     "jest-preset-angular": "8.3.2",
+    "ng-packagr": "^11.2.4",
     "prettier": "2.2.1",
     "ts-jest": "26.4.0",
     "ts-node": "~9.1.1",

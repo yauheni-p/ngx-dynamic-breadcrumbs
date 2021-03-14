@@ -1,0 +1,5 @@
+<table>
+  <tr *ngFor='let car of cars$ | async'>
+    <td class='list-item' [routerLink]='car.id.toString()'>{{car.model}} {{car.brand}}</td>
+  </tr>
+</table>

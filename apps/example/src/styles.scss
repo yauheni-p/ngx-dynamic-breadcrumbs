@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.breadcrumbs__item {
+  font-size: 14px;
+  color: #4e4e4e;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link {
+    color: black;
+  }
+
+  a:visited {
+    color: #4e4e4e;
+  }
+
+  .active {
+    color: black !important;
+    font-weight: 700;
+  }
+}
+
+.default-divider {
+  svg{
+    fill: #4e4e4e;
+  }
+}
+
+.list-item {
+  cursor: pointer;
+  padding: 10px;
+}
+.strong-label {
+  font-weight: 700;
+  font-size: large;
+}
+
+.field-container {
+  margin-bottom: 20px;
+}
+
+.person-info-container {
+  display: flex;
+  .info-block {
+    padding: 15px 25px;
+  }
+
+  .svg-icon {
+    fill: #ffd04e;
+  }
+}
