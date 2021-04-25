@@ -1,14 +1,25 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "ngx-dynamic-breadcrumbs",
+  "keywords": [
+    "breadcrumbs",
+    "breadcrumb",
+    "dynamic",
+    "angular",
+    "ng",
+    "ngx"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/yauheni-p/ngx-dynamic-breadcrumbs.git"
   },
-  "version": "1.0.3",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "src/index.ts"
-    }
-  }
+  "version": "1.0.6",
+  "peerDependencies": {
+    "@angular/common": "^11.2.5",
+    "@angular/core": "^11.2.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "Angular lightweight breadcrumbs"
 }

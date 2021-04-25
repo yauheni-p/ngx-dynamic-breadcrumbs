@@ -5,7 +5,7 @@ import { BreadcrumbsService } from './breadcrumbs.service';
 import { DefaultDividerComponent } from './default-divider/default-divider.component';
 
 export interface BreadcrumbsDefaultOptions {
-  dividerComponent: Type<any>;
+  dividerComponent: Type<unknown>;
 }
 
 export const BREADCRUMBS_DEFAULT_OPTIONS
@@ -18,7 +18,7 @@ export const BREADCRUMBS_DEFAULT_OPTIONS
 })
 export class BreadcrumbsComponent {
   @Input()
-  dividerComponent: Type<any> = DefaultDividerComponent;
+  dividerComponent: Type<unknown> = DefaultDividerComponent;
 
   menuItems$: Observable<Array<Breadcrumb>> = this.service.get();
 

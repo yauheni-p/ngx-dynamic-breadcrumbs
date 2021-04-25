@@ -1,5 +1,5 @@
 # ngx-dynamic-breadcrumbs
-### Angular breadcrumbs
+### Angular lightweight breadcrumbs
 
 ![img.png](img.png)
 ## Install
