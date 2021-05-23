@@ -24,3 +24,5 @@ Run `npm i ngx-dynamic-breadcrumbs` to install.
 
 It is possible to customize a divider:
 ![img_4.png](img_4.png)
+
+[MIT](/libs/breadcrumbs/LICENSE)
