@@ -27,4 +27,4 @@ It is possible to customize a divider:
 
 # License
 
-[MIT](/libs/breadcrumbs/LICENSE)
+[MIT](https://github.com/yauheni-p/ngx-dynamic-breadcrumbs/blob/main/libs/breadcrumbs/LICENSE)
